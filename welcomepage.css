@@ -1,0 +1,168 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f0f0;
+}
+
+.header {
+    background-color: #007acc;
+    color: white;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 1.5em;
+}
+
+.welcome {
+    display: flex;
+    align-items: center;
+}
+
+.welcome span {
+    margin-right: 20px;
+    font-size: 1.1em;
+}
+
+.profile-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #004c99;
+}
+
+.main-content {
+    display: flex;
+    height: calc(100vh - 70px); /* Adjusted for header height */
+}
+
+.sidebar {
+    background-color: #f4f4f4;
+    width: 25%;
+    padding: 20px;
+    box-sizing: border-box;
+    border-right: 1px solid #ddd;
+}
+
+.sidebar h2 {
+    font-size: 1.3em;
+    color: #333;
+}
+
+.class-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.class-list li {
+    padding: 10px 0;
+    font-size: 1em;
+    color: #007acc;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.class-list li:hover {
+    color: #004c99;
+}
+
+.content {
+    background-color: #ffffff;
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.create-class-button {
+    background-color: #007acc;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    font-size: 1em;
+    margin-bottom: 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.create-class-button:hover {
+    background-color: #005b99;
+}
+
+.instruction {
+    font-size: 1.1em;
+    color: #555;
+}
+
+/* Popup Modal Styles */
+.popup {
+    display: none; /* Hidden by default */
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+    padding-top: 60px;
+}
+
+.popup-content {
+    background-color: #fefefe;
+    margin: 5% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 300px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.popup input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.create-button {
+    background-color: #7bc96f;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 5px;
+    color: white;
+}
+
+.create-button:hover {
+    background-color: #69a35a;
+}

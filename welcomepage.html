@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attendance Tracker</title>
+    <link rel="stylesheet" href="welcomepage.css">
+</head>
+<body>
+    <div class="header">
+        <h1>Attendance Tracker</h1>
+        <div class="welcome">
+            <span>Welcome....</span>
+            <div class="profile-icon"></div>
+        </div>
+    </div>
+    <div class="main-content">
+        <div class="sidebar">
+            <h2>Your Classes</h2>
+            <ul class="class-list" id="class-list">
+                <!-- List of classes will be dynamically generated here -->
+            </ul>
+        </div>
+        <div class="content" id="class-content">
+            <button class="create-class-button" onclick="openPopup()">Create Class</button>
+            <p class="instruction">Add class or choose a class</p>
+        </div>
+    </div>
+
+    <!-- Popup Modal -->
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <span class="close" onclick="closePopup()">&times;</span>
+            <h2>Create Class</h2>
+            <input type="text" id="class-name-input" placeholder="Class Name">
+            <button class="create-button" onclick="createClass()">Create</button>
+        </div>
+    </div>
+
+    <script src="welcomepage.js"></script>
+</body>
+</html>
