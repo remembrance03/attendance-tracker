@@ -1,32 +1,33 @@
-// Array to store classes
 let classes = [];
-
-// Get the modal
 var popup = document.getElementById("popup");
-
-// Function to open the modal
 function openPopup() {
     popup.style.display = "block";
 }
 
-// Function to close the modal
-function closePopup() {
+
+function closePopup()
+{
     popup.style.display = "none";
 }
 
-// Close the modal if the user clicks outside of it
-window.onclick = function(event) {
-    if (event.target == popup) {
+
+
+window.onclick = function(event)
+{
+    if (event.target == popup)
+    {
         popup.style.display = "none";
     }
 }
 
-// Function to create a new class
-function createClass() {
+
+function createClass()
+{
     var classNameInput = document.getElementById("class-name-input");
     var className = classNameInput.value.trim();
 
-    if (className) {
+    if (className)
+{
         classes.push(className);
         updateClassList();
         classNameInput.value = "";
@@ -34,12 +35,14 @@ function createClass() {
     }
 }
 
-// Function to update the class list in the sidebar
-function updateClassList() {
+
+function updateClassList()
+{
     var classList = document.getElementById("class-list");
     classList.innerHTML = "";
 
-    classes.forEach((className, index) => {
+    classes.forEach((className, index) =>
+{
         var listItem = document.createElement("li");
         listItem.textContent = className;
         listItem.onclick = function() {
@@ -49,7 +52,7 @@ function updateClassList() {
     });
 }
 
-// Function to open the class view
+
 function openClassView(index) {
     var classContent = document.getElementById("class-content");
     classContent.innerHTML = `
