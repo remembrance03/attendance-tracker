@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Segoe UI';
     background-color: #f0f0f0;
 }
 
@@ -38,7 +38,7 @@ body {
 
 .main-content {
     display: flex;
-    height: calc(100vh - 70px); /* Adjusted for header height */
+    height: calc(100vh - 70px); 
 }
 
 .sidebar {
@@ -105,9 +105,9 @@ body {
     color: #555;
 }
 
-/* Popup Modal Styles */
+
 .popup {
-    display: none; /* Hidden by default */
+    display: none; 
     position: fixed;
     z-index: 1;
     left: 0;
